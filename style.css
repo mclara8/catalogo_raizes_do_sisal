@@ -1,0 +1,47 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0;}
+
+:root {
+    --verm: #8b1a1a;
+    --vermclaro: #c0392b;
+    --dourado: #c9a84c;
+    --creme: #f9f3e8;
+    --escuro: #1c1209;
+    --texto: #3a2a1a;
+    --texto-leve: #6b5744;
+}
+
+html { scroll-behavior: smooth;}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--creme);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(28, 18, 9, 0.96);
+    backdrop-filter: blur(6px);
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--dourado);
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+    color: #d6c8b4;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--dourado) }
+
